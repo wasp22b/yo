@@ -77,7 +77,7 @@ export async function request<T>(
     headers: {
       Accept: "application/json",
       "Content-Type": "application/json",
-      ...(token ? { Authorization: `Bearer ${token}` } : {}),
+      ...(token ? { Authorization: "Bearer " + token } : {}),
     },
     body: body === undefined ? undefined : JSON.stringify(body),
   });
