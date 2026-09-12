@@ -20,9 +20,11 @@ export default function FacilityHomeActions({
 
   return (
     <Page>
-      <Button variant="primary" size="sm" className={className}>
-        <PlusIcon />
-        {t("procurement__action_label")} ({facility.id.slice(0, 8)})
+      <Button asChild variant="primary" size="sm" className={className}>
+        <a href="/procurement">
+          <PlusIcon />
+          {t("procurement__action_label")} ({facility.id.slice(0, 8)})
+        </a>
       </Button>
     </Page>
   );

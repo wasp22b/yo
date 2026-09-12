@@ -1,6 +1,8 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
+import Page from "./components/Page";
 import ProcurementPage from "./pages/ProcurementPage";
 
 /**
@@ -9,9 +11,14 @@ import ProcurementPage from "./pages/ProcurementPage";
  * and so the plugin can be developed in isolation.
  */
 window.CARE_API_URL ??= "http://127.0.0.1:9000";
+const queryClient = new QueryClient();
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <ProcurementPage />
+    <QueryClientProvider client={queryClient}>
+      <Page>
+        <ProcurementPage />
+      </Page>
+    </QueryClientProvider>
   </StrictMode>,
 );
