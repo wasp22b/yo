@@ -1,0 +1,15 @@
+{
+  "procurement__page_title": "Care Procurement",
+  "procurement__nav_label": "Procurement",
+  "procurement__action_label": "Open Care Procurement",
+  "procurement__facility_operations": "Facility operations",
+  "procurement__page_description": "Manage vendors, tenders, purchase orders, and goods receipts in one purchasing workspace.",
+  "procurement__loading": "Loading…",
+  "procurement__enabled": "Procurement is enabled for this facility.",
+  "procurement__disabled": "Procurement is currently disabled.",
+  "procurement__vendors": "Vendors",
+  "procurement__tenders": "Tenders",
+  "procurement__purchase_orders": "Purchase orders",
+  "procurement__receipts": "Receipts",
+  "procurement__resource_path": "API resource: {{resource}}"
+}
